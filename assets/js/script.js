@@ -213,6 +213,10 @@ tasks = updatedTaskArr;
 
 };
 
+var saveTasks = function() {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
 // Create a new task
 formEl.addEventListener("submit", taskFormHandler);
 
